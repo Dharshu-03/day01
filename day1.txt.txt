@@ -1,0 +1,27 @@
+1.Write a blog on Difference between HTTP1.1 vs HTTP2
+  ans:  
+  * Http1 works based on textual format while Http2 works based on binary format.
+  * Http1 compresses data by itself while Http2 compresses the data using the HPACK method
+  * Problem with Http1.1 is that it transfers all the data in plain text format which is solved in Http2
+  * For collecting multiple servers Http1.1 uses requests resource Inlining for use getting multiple pages while 
+    http 2 uses PUSH frame by server that collects all multiple pages
+  * Http2 is more faster than Http 1.1 because of using methods such as compression of request headers, request pipeline, server push, package 
+    blocking and use of binary method instead of textual methods.
+  * Request multiplexing is a method of sending multiple requests over single TCP connection. It allows downloading web files asynchronously.
+  * Http2 compress a large number of redundant header frames using the HPACK specification which is a simple and secure approach to header compression. 
+    Both client and server maintain a list of headers used in previous client-server requests.
+  * Browsers using Http2 implementation will convert the text commands into binary before transmitting it over the network
+
+2.Write a blog about objects and its internal representation in JavaScript
+  ans: 
+ * Objects, in JavaScript, is it’s most important data-type and forms the building blocks for modern JavaScript. These objects are quite different from 
+    JavaScript’s primitive data-types.
+  * Objects are more complex and each object may contain any combination of these primitive data-types.
+  * In other words, objects in JavaScript may be defined as an unordered collection of related data, of primitive or reference types, in the 
+    form of “key: value” pairs.
+  * A property of an object can be explained as a variable that is attached to the object. Object properties are basically the same as ordinary JavaScript variables,
+    except for the attachment to objects. The properties of an object define the characteristics of the object. You access the properties of an object
+    with a simple dot-notation: objectName.propertyName
+  * Internally, JavaScript engines use various data structures to represent objects efficiently. One common approach is using a hash table or a similar 
+    structure to store the object’s properties and their corresponding values.
+  * 
